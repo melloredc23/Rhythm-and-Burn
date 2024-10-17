@@ -47,17 +47,17 @@ if section == 'Data Overview':
     with tab1:
         st.header("Dance Styles and Genres")
 
-    #Load DANCE dataset
-    dataset = 'https://www.kaggle.com/datasets/melissamonfared/dances/discussion/518578'
-    # Using opendatasets let's download the data sets
-    od.download(dataset, force=True)
-    # #kaggle datasets download -d melissamonfared/dances
-    data_dir = './dances'
-    os.listdir(data_dir)
-    #encoding='latin-1' - helps solve the error: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 41293: invalid continuation byte
+        #Load DANCE dataset
+        dataset = 'https://www.kaggle.com/datasets/melissamonfared/dances/discussion/518578'
+        # Using opendatasets let's download the data sets
+        od.download(dataset, force=True)
+        # #kaggle datasets download -d melissamonfared/dances
+        data_dir = './dances'
+        os.listdir(data_dir)
+        #encoding='latin-1' - helps solve the error: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 41293: invalid continuation byte
 
-    df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
-    #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv')
+        df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+        #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv')
 
         st.write("Dance Styles and Genres Dataset")
         st.dataframe(df)
