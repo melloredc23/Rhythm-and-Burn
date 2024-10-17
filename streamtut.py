@@ -25,7 +25,7 @@ st.header("Welcome to my Streamlit app!")
 #Overview
 #st.markdown("This app shows if there is a correlation between the tempo and health benefits between different dance styles to determine which dance style is better for physical fitness and health.")
 #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
-df= pd.read_csv('/Rhythm-and-Burn/dance data.csv)
+df= pd.read_csv('/Rhythm-and-Burn/dance data.csv')
 df2= p.read_csv('/Rhythm-and-Burn/exercise_dataset.csv')
 #df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
 d3 = df2.drop(['130 lb', '155 lb', '180 lb', '205 lb'], axis=1)
@@ -154,7 +154,7 @@ print(z1)
         #od.download(dataset2, force=True)
         #data_dir2 = './calories-burned-during-exercise-and-activities'
         #os.listdir(data_dir2)
-        df2= p.read_csv('/Rhythm-and-Burn/exercise_dataset.csv')
+        df2= pd.read_csv('/Rhythm-and-Burn/exercise_dataset.csv')
         #df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
     
         st.write("Calories Dataset")
@@ -215,7 +215,7 @@ if section == 'Correlation Analysis':
 # Outliers - bar plots
 if section == 'Visualizations':
     #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
-    df= pd.read_csv('/Rhythm-and-Burn/dance data.csv,encoding='latin-1')
+    df= pd.read_csv('/Rhythm-and-Burn/dance data.csv')
     st.header("Visualizations")
 
     #df["Health Benefits"]
