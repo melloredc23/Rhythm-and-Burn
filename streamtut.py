@@ -24,7 +24,8 @@ st.header("Welcome to my Streamlit app!")
 
 #Overview
 #st.markdown("This app shows if there is a correlation between the tempo and health benefits between different dance styles to determine which dance style is better for physical fitness and health.")
-df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+#df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+df= pd.read_csv('/Rhythm-andBurn/dance data.csv,encoding='latin-1')
 df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
 d3 = df2.drop(['130 lb', '155 lb', '180 lb', '205 lb'], axis=1)
 d3 = d3.iloc[[29, 34, 35, 36],:]
@@ -48,16 +49,17 @@ if section == 'Data Overview':
         st.header("Dance Styles and Genres")
 
         #Load DANCE dataset
-        dataset = 'https://www.kaggle.com/datasets/melissamonfared/dances/discussion/518578'
+        #dataset = 'https://www.kaggle.com/datasets/melissamonfared/dances/discussion/518578'
         # Using opendatasets let's download the data sets
-        od.download(dataset, force=True)
+        #od.download(dataset, force=True)
         # #kaggle datasets download -d melissamonfared/dances
-        data_dir = './dances'
-        os.listdir(data_dir)
+        #data_dir = './dances'
+        #os.listdir(data_dir)
         #encoding='latin-1' - helps solve the error: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 41293: invalid continuation byte
 
-        df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+        #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
         #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv')
+        df= pd.read_csv('/Rhythm-andBurn/dance data.csv,encoding='latin-1')
 
         st.write("Dance Styles and Genres Dataset")
         st.dataframe(df)
