@@ -27,7 +27,6 @@ st.header("Welcome to my Streamlit app!")
 #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
 df = 'https://www.kaggle.com/datasets/melissamonfared/dances/discussion/518578'
 df2 = 'https://www.kaggle.com/datasets/aadhavvignesh/calories-burned-during-exercise-and-activities/discussion/144014'
-#df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
 d3 = df2.drop(['130 lb', '155 lb', '180 lb', '205 lb'], axis=1)
 d3 = d3.iloc[[29, 34, 35, 36],:]
 
