@@ -24,8 +24,7 @@ st.header("Welcome to my Streamlit app!")
 
 #Overview
 #st.markdown("This app shows if there is a correlation between the tempo and health benefits between different dance styles to determine which dance style is better for physical fitness and health.")
-#df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
-df = pd.read_csv('dance data.csv')
+df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
 df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
 d3 = df2.drop(['130 lb', '155 lb', '180 lb', '205 lb'], axis=1)
 d3 = d3.iloc[[29, 34, 35, 36],:]
