@@ -58,7 +58,7 @@ if section == 'Data Overview':
     #os.listdir(data_dir)
     #encoding='latin-1' - helps solve the error: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf1 in position 41293: invalid continuation byte
 
-        df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+        df = pd.read_csv('dance data.csv', encoding='latin-1')
     #df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv')
 
         st.write("Dance Styles and Genres Dataset")
@@ -153,7 +153,7 @@ print(z1)
         #od.download(dataset2, force=True)
         #data_dir2 = './calories-burned-during-exercise-and-activities'
         #os.listdir(data_dir2)
-        df2 = pd.read_csv("/Users/kendallandrews/Downloads/calories-burned-during-exercise-and-activities/exercise_dataset.csv")
+        df2 = pd.read_csv("exercise_dataset.csv")
     
         st.write("Calories Dataset")
         st.dataframe(df2)
@@ -177,7 +177,7 @@ print(z1)
 
 #Correlation Analysis
 if section == 'Correlation Analysis':
-    df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+    df = pd.read_csv('dance data.csv', encoding='latin-1')
     st.header("Correlation Analysis Between Tempo and Health Benefits")
     #df["Health Benefits"]
     df["health_count"] = df["Health Benefits"].str.split(",").apply(len)
@@ -212,7 +212,7 @@ if section == 'Correlation Analysis':
 #- Missing data plots - correlation heatmaps
 # Outliers - bar plots
 if section == 'Visualizations':
-    df = pd.read_csv('/Users/kendallandrews/Downloads/dances/dance data.csv', encoding='latin-1')
+    df = pd.read_csv('dance data.csv', encoding='latin-1')
     st.header("Visualizations")
 
     #df["Health Benefits"]
