@@ -38,7 +38,7 @@ if section == 'Introduction':
     st.markdown("**Introduction**")
     st.write("This project explores different dance styles from all around the world, focusing on the relationship between **tempo** and **health benefits** to identify which styles offers the greatest physical fitness benefit")
     st.write("To connect this data, I also analyzed the relationship between **tempo** and **calories** to identify if faster-tempo dances result in higher calorie expenditure")
-    st.image('/Users/kendallandrews/Downloads/groupdance.jpg')
+    #st.image('/Users/kendallandrews/Downloads/groupdance.jpg')
     #provide pictures of dances
 
 #Data Overview - summarize the datasets (tables, key statistics, and visual overview - allow users to explore data through sorting and filtering)
